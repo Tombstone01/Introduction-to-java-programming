@@ -9,12 +9,12 @@ cp - copy a file.
 
 ## How to compile a java program using the command line interface.
 
-javac -d <destination> <file2compile>
+javac -d <destination> <file2compile> : Compiles the program into a separate destination.
 
 ## How to run a java program from the command line interface.
 
-java file2run
+java file2run : Runs the compiled code at a destination.
 
 ## How to view byte code.
 
-javap <file>
+javap <file> : View the byte code of the file.
