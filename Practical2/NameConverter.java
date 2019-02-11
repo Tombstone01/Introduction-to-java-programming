@@ -1,3 +1,7 @@
+// Author: Kananelo Maxwell
+// Student#: 217080976
+// Practical: 01
+
 class NameConverter {
   
   private String heroName;
@@ -28,7 +32,7 @@ class NameConverter {
       char temp = this.heroName.charAt(i);
       
       for (int j = 0; j < 37; j++) {
-        if (this.scram[j].charAt(0) == temp) {
+        if (this.text[j].charAt(0) == temp) {
           index = j;
         }
 
@@ -47,6 +51,16 @@ class NameConverter {
     for (int i = 0; i < this.secretName.length(); i++) {
       int index = -1;
       char temp = this.secretName.charAt(i);
+
+      for (int j = 0; j < 37; j++) {
+        if (scram[j].charAt(0) == temp) {
+          index = j;
+        }
+
+        if (index != -1) {
+          this.heroName+=text[index];
+        }
+      }
     }
 
     return null;
