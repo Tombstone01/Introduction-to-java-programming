@@ -42,7 +42,7 @@ class NameConverter {
       }
     }
 
-    return null;    
+    return this.secretName;    
   }
 
   public String unscramble(String secretName) {
@@ -63,7 +63,7 @@ class NameConverter {
       }
     }
 
-    return null;
+    return this.heroName;
   }
 
   String getHeroName() {

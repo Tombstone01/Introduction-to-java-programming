@@ -11,31 +11,46 @@ class Main {
 		String results;
 		String encode;
 
-		/** Creates an instance of class NameConverter.
-		 **/
+		// Creates an instance of class NameConverter.
 		NameConverter converter = new NameConverter();
+
+		// Creates an instance of scanner class.
 		Scanner scanner = new Scanner(System.in);
 
+		// Print information to the console.
 		System.out.println("Would you like to Scramble a hero name (Y) or Unscramble a hero name (N)?");
+
+		// Retrive input from the user.
 		encode = scanner.nextLine();
-		System.out.println("Input: " + input);
 		
 		if (encode.equalsIgnoreCase("Y")) {
+			
+			// Print information to the console.
 			System.out.println("Please enter the Hero's name to scramble:");
+
+			// Retrieve information from the user.
 			name = scanner.nextLine();
 
+			// Scramble user input.
 			results = converter.scramble(name);
 
-			System.out.println("Entered hero name: " + name);
-			System.out.println("Scrambled hero name" + results);
+			// Print information to the console.
+			System.out.println("Entered hero name: \n" + name);
+			System.out.println("Scrambled hero name: \n" + results);
 		} else {
+			
+			// Print information to the console.
 			System.out.println("Please enter secret Hero's name to unscramble:");
+			
+			// Take input from the user.
 			name = scanner.nextLine();
 
+			// Unscramble user input.
 			results = converter.unscramble(name);
 
-			System.out.println("Entered Secret Name: " + name);
-			System.out.println("Unscrambled Hero Name: " + results);
+			// print information to the console.
+			System.out.println("Entered Secret Name: \n" + name);
+			System.out.println("Unscrambled Hero Name: \n" + results);
 		}
 	}
 }
