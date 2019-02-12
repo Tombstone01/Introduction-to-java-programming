@@ -44,20 +44,23 @@ class Team {
 		}	
 	}
 	
-	/** Set ID of team.
-	**/
+	// Set ID of team.
 	public void setID(String ID) {
 		this.ID = ID;
 	}
 	
+	// Set team name.
 	public void setName(String name) {
 		this.name = name;
 	}
 	
+	
+	// Get team name.
 	public String getName() {
 		return this.name;
 	}
 	
+	// Get team ID.
 	public String getID() {
 		return this.ID;
 	}
