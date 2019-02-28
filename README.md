@@ -32,7 +32,7 @@
 * [ ] Iterators.
 * [ ] Flow control.
 
-### Lecture 02 - Methods, arrays and algorithms.
+### [Lecture 02 - Methods, arrays and algorithms](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture02.pdf).
 
 * [ ] Methods.
 * [ ] Method signature.
@@ -50,7 +50,7 @@
 * [ ] Selection sort.
 * [ ] Quick sort.
 
-### Lecture 03 - Basic object orientation.
+### [Lecture 03 - Basic object orientation](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture03.pdf).
 
 * [ ] Objects and classes.
 * [ ] OO metaphor.
@@ -64,7 +64,7 @@
 * [ ] Immutable objects.
 * [ ] UML Class diagrams.
 
-### Lecture 04 - Strings and regular expressions.
+### [Lecture 04 - Strings and regular expressions](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture04.pdf).
 
 * [ ] Strings.
 * [ ] The String class.
@@ -79,7 +79,7 @@
 * [ ] Quantifiers.
 * [ ] Java and regular expressions.
 
-### Lecture 05 - Exception handling and Text IO.
+### [Lecture 05 - Exception handling and Text IO](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture05.pdf).
 
 * [ ] Exception handling.
 * [ ] Exceptions.
@@ -93,7 +93,7 @@
 * [ ] Writing to text files.
 * [ ] Reading from text files.
 
-### Lecture 06 - Advanced Object orientation (part 1).
+### [Lecture 06 - Advanced Object orientation (part 1)](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture06.pdf).
 
 * [ ] Inheritance.
 * [ ] Inheritance 
@@ -103,7 +103,7 @@
 * [ ] java.lang.Object.
 * [ ] Inheritance example.
 
-### Lecture 07 - Advanced Object Orientation (part 2).
+### [Lecture 07 - Advanced Object Orientation (part 2)](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture07.pdf).
 
 * [ ] Abstract classes and interfaces.
 * [ ] Concept of abstract class.
