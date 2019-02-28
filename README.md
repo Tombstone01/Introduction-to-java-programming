@@ -1,7 +1,116 @@
-# Description
+#Computer Science 2A.
 
-Java is a literally one of the most popular programming languages in the world. It used to software development, mobile development (android),
-large systems development etc. Java is cross platform, thanks to Java Virtual Machine or JVM which makes sure that code does not need to be 
-recompiled from scatch for it to work on another platform.
+###Lecture 00 - Java overview.
 
-Java was created in 1995 by Sun microsystems and is currently owned by Oracle. It was first called Oak, named after a tree, but the name was finally changed to Java.
+Programming languages.
+Java technologies.
+Java and C++ compared.
+Domains and visibility.
+Pointers.
+Primitive data types.
+Garbage collection.
+Exception handling.
+Inheritance.
+Operator overloading.
+Interfaces.
+Object allocation.
+Multithreading.
+Strings and arrays.
+
+###Lecture 01 - Elementary java programming.
+
+The basics.
+Identifies, types and constants.
+Java data types.
+Operators and numerical type conversion.
+Character data.
+Output and input.
+Hello world.
+Programming constructs.
+Logical operators.
+Conditional statements.
+Selection statements.
+Iterators.
+Flow control.
+
+###Lecture 02 - Methods, arrays and algorithms.
+
+Methods.
+Method signature.
+Method invocation.
+Method overloading.
+The scope of a variable.
+Program modularity.
+Arrays.
+Array declaration.
+Variable length parameter list.
+The java.utils.array class
+Sorting algorithms.
+Sorting.
+Insertion sort.
+Selection sort.
+Quick sort.
+
+###Lecture 03 - Basic object orientation.
+
+Objects and classes.
+OO metaphor.
+Principles of OO design.
+Java classes and objects.
+Constructors and member access.
+Reference types and garbage collection.
+Modifiers.
+Scope in a class.
+The this reference.
+Packages.
+Immutable objects.
+UML Class diagrams.
+
+###Lecture 04 - Strings and regular expressions.
+
+Strings.
+The String class.
+String immutability.
+Internet Strings.
+String comparisons.
+String methods.
+Stringbuilder and Stringbuffer.
+StringTokenizer.
+Regular expressions.
+Regular expressions.
+Character classes.
+Quantifiers.
+Java and regular expressions.
+
+###Lecture 05 - Exception handling and Text IO.
+
+Exception handling.
+Exceptions.
+Exception types.
+Handling exceptions.
+When to use exceptions.
+Assertions.
+Text I/O
+Persistence.
+The File class.
+Writing to text files.
+Reading from text files.
+
+###Lecture 06 - Advanced Object orientation (part 1).
+
+Inheritance.
+Inheritance 
+Using inheritance.
+The super keyword.
+Overriding methods and casting.
+java.lang.Object.
+Inheritance example.
+
+###Lecture 07 - Advanced Object Orientation (part 2).
+
+Abstract classes and interfaces.
+Concept of abstract class.
+Abstract classes in java.
+Interfaces.
+Abstract classes vs interfaces.
+Abstract classes vs interfaces examples.
