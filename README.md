@@ -17,7 +17,7 @@
 * [ ] Multithreading.
 * [ ] Strings and arrays.
 
-### Lecture 01 - Elementary java programming.
+### [Lecture 01 - Elementary java programming](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture01.pdf).
 
 * [ ] The basics.
 * [ ] Identifies, types and constants.
