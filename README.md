@@ -52,64 +52,62 @@
 
 ### Lecture 03 - Basic object orientation.
 
-Objects and classes.
-OO metaphor.
-Principles of OO design.
-Java classes and objects.
-Constructors and member access.
-Reference types and garbage collection.
-Modifiers.
-Scope in a class.
-The this reference.
-Packages.
-Immutable objects.
-UML Class diagrams.
+* [ ] Objects and classes.
+* [ ] OO metaphor.
+* [ ] Principles of OO design.
+* [ ] Java classes and objects.
+* [ ] Constructors and member access.
+* [ ] Reference types and garbage collection.
+* [ ] Modifiers.
+* [ ] Scope in a class.
+* [ ] Packages.
+* [ ] Immutable objects.
+* [ ] UML Class diagrams.
 
 ### Lecture 04 - Strings and regular expressions.
 
-Strings.
-The String class.
-String immutability.
-Internet Strings.
-String comparisons.
-String methods.
-Stringbuilder and Stringbuffer.
-StringTokenizer.
-Regular expressions.
-Regular expressions.
-Character classes.
-Quantifiers.
-Java and regular expressions.
+* [ ] Strings.
+* [ ] The String class.
+* [ ] String immutability.
+* [ ] Internet Strings.
+* [ ] String comparisons.
+* [ ] String methods.
+* [ ] Stringbuilder and Stringbuffer.
+* [ ] Regular expressions.
+* [ ] Regular expressions.
+* [ ] Character classes.
+* [ ] Quantifiers.
+* [ ] Java and regular expressions.
 
 ### Lecture 05 - Exception handling and Text IO.
 
-Exception handling.
-Exceptions.
-Exception types.
-Handling exceptions.
-When to use exceptions.
-Assertions.
-Text I/O
-Persistence.
-The File class.
-Writing to text files.
-Reading from text files.
+* [ ] Exception handling.
+* [ ] Exceptions.
+* [ ] Exception types.
+* [ ] Handling exceptions.
+* [ ] When to use exceptions.
+* [ ] Assertions.
+* [ ] Text I/O
+* [ ] Persistence.
+* [ ] The File class.
+* [ ] Writing to text files.
+* [ ] Reading from text files.
 
 ### Lecture 06 - Advanced Object orientation (part 1).
 
-Inheritance.
-Inheritance 
-Using inheritance.
-The super keyword.
-Overriding methods and casting.
-java.lang.Object.
-Inheritance example.
+* [ ] Inheritance.
+* [ ] Inheritance 
+* [ ] Using inheritance.
+* [ ] The super keyword.
+* [ ] Overriding methods and casting.
+* [ ] java.lang.Object.
+* [ ] Inheritance example.
 
 ### Lecture 07 - Advanced Object Orientation (part 2).
 
-Abstract classes and interfaces.
-Concept of abstract class.
-Abstract classes in java.
-Interfaces.
-Abstract classes vs interfaces.
-Abstract classes vs interfaces examples.
+* [ ] Abstract classes and interfaces.
+* [ ] Concept of abstract class.
+* [ ] Abstract classes in java.
+* [ ] Interfaces.
+* [ ] Abstract classes vs interfaces.
+* [ ] Abstract classes vs interfaces examples.
