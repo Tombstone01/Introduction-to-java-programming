@@ -2,54 +2,53 @@
 
 ### Lecture 00 - Java overview.
 
-Programming languages.
-Java technologies.
-Java and C++ compared.
-Domains and visibility.
-Pointers.
-Primitive data types.
-Garbage collection.
-Exception handling.
-Inheritance.
-Operator overloading.
-Interfaces.
-Object allocation.
-Multithreading.
-Strings and arrays.
+* [ ] Programming languages.
+* [ ] Java technologies.
+* [ ] Java and C++ compared.
+* [ ] Domains and visibility.
+* [ ] Pointers.
+* [ ] Primitive data types.
+* [ ] Garbage collection.
+* [ ] Exception handling.
+* [ ] Inheritance.
+* [ ] Operator overloading.
+* [ ] Interfaces.
+* [ ] Object allocation.
+* [ ] Multithreading.
+* [ ] Strings and arrays.
 
 ### Lecture 01 - Elementary java programming.
 
-The basics.
-Identifies, types and constants.
-Java data types.
-Operators and numerical type conversion.
-Character data.
-Output and input.
-Hello world.
-Programming constructs.
-Logical operators.
-Conditional statements.
-Selection statements.
-Iterators.
-Flow control.
+* [ ] The basics.
+* [ ] Identifies, types and constants.
+* [ ] Java data types.
+* [ ] Operators and numerical type conversion.
+* [ ] Character data.
+* [ ] Output and input.
+* [ ] Hello world.
+* [ ] Programming constructs.
+* [ ] Logical operators.
+* [ ] Selection statements.
+* [ ] Iterators.
+* [ ] Flow control.
 
 ### Lecture 02 - Methods, arrays and algorithms.
 
-Methods.
-Method signature.
-Method invocation.
-Method overloading.
-The scope of a variable.
-Program modularity.
-Arrays.
-Array declaration.
-Variable length parameter list.
-The java.utils.array class
-Sorting algorithms.
-Sorting.
-Insertion sort.
-Selection sort.
-Quick sort.
+* [ ] Methods.
+* [ ] Method signature.
+* [ ] Method invocation.
+* [ ] Method overloading.
+* [ ] The scope of a variable.
+* [ ] Program modularity.
+* [ ] Arrays.
+* [ ] Array declaration.
+* [ ] Variable length parameter list.
+* [ ] The java.utils.array class
+* [ ] Sorting algorithms.
+* [ ] Sorting.
+* [ ] Insertion sort.
+* [ ] Selection sort.
+* [ ] Quick sort.
 
 ### Lecture 03 - Basic object orientation.
 
