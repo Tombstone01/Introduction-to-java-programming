@@ -112,7 +112,7 @@
 * [ ] Abstract classes vs interfaces.
 * [ ] Abstract classes vs interfaces examples.
 
-### [Lecture 08 - JavaFX and Event Handling]()
+### [Lecture 08 - JavaFX and Event Handling](https://github.com/Tombstone01/Computer-Science/blob/master/slides/ACSSE_CSC2A_2019_Lecture08.pdf)
 
 * [ ] Basic JavaFX.
 * [ ] Properties of JavaFX.
