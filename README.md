@@ -111,3 +111,11 @@
 * [ ] Interfaces.
 * [ ] Abstract classes vs interfaces.
 * [ ] Abstract classes vs interfaces examples.
+
+### [Lecture 08 - JavaFX and Event Handling]()
+
+* [ ] Basic JavaFX.
+* [ ] Properties of JavaFX.
+* [ ] GUI Event Handling.
+* [ ] Events in code.
+* [ ] Hello world - JavaFX style.
