@@ -2,7 +2,7 @@
 
 ### [Lecture 00 - Java overview](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture00.pdf).
 
-* [*] Programming languages.
+* [ * ] Programming languages.
 * [*] Java technologies.
 * [ ] Java and C++ compared.
 * [ ] Domains and visibility.
