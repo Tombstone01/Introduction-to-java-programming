@@ -122,8 +122,28 @@
 
 ### [Lecture 09 - Graphical user interfaces in Java](https://github.com/Tombstone01/Introduction-to-java-programming/blob/master/slides/ACSSE_CSC2A_2019_Lecture09.pdf)
 
+* [ ] GUI Frameworks.
+* [ ] Java GUI classes.
+* [ ] Low level rendering.
+* [ ] More JavaFX code.
+
 ### [Lecture 10 - Binary IO](https://github.com/Tombstone01/Introduction-to-java-programming/blob/master/slides/ACSSE_CSC2A_2019_Lecture10.pdf)
+
+ * [ ] Binary IO.
+ * [ ] Filtered IO.
+ * [ ] Object IO.
+ * [ ] Random Access Files.
 
 ### [Lecture 11 - Generics](https://github.com/Tombstone01/Introduction-to-java-programming/blob/master/slides/ACSSE_CSC2A_2019_Lecture11.pdf)
 
+* [ ] Generics.
+* [ ] Type erasure and generics restriction.
+* [ ] Unbounded types, raw types and wildcards.
+
 ### [Lecture 12 - Design Patterns Part 1](https://github.com/Tombstone01/Introduction-to-java-programming/blob/master/slides/ACSSE_CSC2A_2019_Lecture12.pdf)
+
+* [ ] Design patterns.
+* [ ] Behavioural design patterns.
+* [ ] Visitor.
+* [ ] Observer.
+* [ ] Command.
