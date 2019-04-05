@@ -16,7 +16,7 @@ public class Main extends Application
 	
 	public void start(Stage stage) {
 		stage.setTitle("Javafx application");
-    GamePane pane = new GamePane();
+    	GamePane pane = new GamePane();
 		Scene scene = new Scene(pane, windowWidth, windowHeight);
 		stage.setScene(scene);
 		stage.show();
