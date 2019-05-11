@@ -10,7 +10,7 @@ REM Good batch file coding practice
 setlocal enabledelayedexpansion
 
 REM Paths for Java
-set PATH=%PATH%;C:\Program Files\Java\jdk1.8.0_201\bin
+set PATH=%PATH%;C:\Program Files\Java\jdk-12.0.1\bin
 echo Setup JDK bin path before this script
 
 REM Move to correct folder
