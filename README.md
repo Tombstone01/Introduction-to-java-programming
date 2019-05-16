@@ -114,36 +114,36 @@
 
 ### [Lecture 08 - JavaFX and Event Handling](https://github.com/Tombstone01/Computer-Science/blob/master/slides/ACSSE_CSC2A_2019_Lecture08.pdf)
 
-* [ ] Basic JavaFX.
-* [ ] Properties of JavaFX.
-* [ ] GUI Event Handling.
-* [ ] Events in code.
-* [ ] Hello world - JavaFX style.
+* [x] Basic JavaFX.
+* [x] Properties of JavaFX.
+* [x] GUI Event Handling.
+* [x] Events in code.
+* [x] Hello world - JavaFX style.
 
 ### [Lecture 09 - Graphical user interfaces in Java](https://github.com/Tombstone01/Introduction-to-java-programming/blob/master/slides/ACSSE_CSC2A_2019_Lecture09.pdf)
 
-* [ ] GUI Frameworks.
-* [ ] Java GUI classes.
-* [ ] Low level rendering.
-* [ ] More JavaFX code.
+* [x] GUI Frameworks.
+* [x] Java GUI classes.
+* [x] Low level rendering.
+* [] More JavaFX code.
 
 ### [Lecture 10 - Binary IO](https://github.com/Tombstone01/Introduction-to-java-programming/blob/master/slides/ACSSE_CSC2A_2019_Lecture10.pdf)
 
- * [ ] Binary IO.
- * [ ] Filtered IO.
- * [ ] Object IO.
- * [ ] Random Access Files.
+ * [x] Binary IO.
+ * [x] Filtered IO.
+ * [x] Object IO.
+ * [x] Random Access Files.
 
 ### [Lecture 11 - Generics](https://github.com/Tombstone01/Introduction-to-java-programming/blob/master/slides/ACSSE_CSC2A_2019_Lecture11.pdf)
 
-* [ ] Generics.
-* [ ] Type erasure and generics restriction.
-* [ ] Unbounded types, raw types and wildcards.
+* [x] Generics.
+* [x] Type erasure and generics restriction.
+* [x] Unbounded types, raw types and wildcards.
 
 ### [Lecture 12 - Design Patterns Part 1](https://github.com/Tombstone01/Introduction-to-java-programming/blob/master/slides/ACSSE_CSC2A_2019_Lecture12.pdf)
 
-* [ ] Design patterns.
-* [ ] Behavioural design patterns.
-* [ ] Visitor.
-* [ ] Observer.
-* [ ] Command.
+* [x] Design patterns.
+* [x] Behavioural design patterns.
+* [x] Visitor.
+* [x] Observer.
+* [x] Command.
