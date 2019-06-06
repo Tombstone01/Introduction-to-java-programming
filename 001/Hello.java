@@ -1,12 +1,11 @@
 public class Hello {
-    public static void main(String[] args) {        
-        if (args.length > 0) {
-            // Loop through all the elements of the array.
-            for (int x = 0; x < args.length; x++) {
-                System.out.println(" - " + args[x]);
-            }
-        } else {
-            System.out.println("No arguments passed!");
-        }
-    } // end static method
+  public static void main(String[] args) {
+    for (int i = 0; i < 100; i++) {
+      if (Math.random() * 100 < 10) {
+        break;
+      } else {
+        System.out.println(i);
+      }
+    }
+  } // end static method
 } // end class
