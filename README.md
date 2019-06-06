@@ -1,21 +1,21 @@
-# Computer Science 2A.
+## This repository contains java applications, for both written for research and also those written as assignments as part of the course that I am doing here a the university.
 
 ### [Lecture 00 - Java overview](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture00.pdf).
 
 * [x] Programming languages.
 * [x] Java technologies.
 * [x] Java and C++ compared.
-* [x] Domains and visibility.
-* [x] Pointers.
-* [x] Primitive data types.
-* [x] Garbage collection.
-* [x] Exception handling.
-* [x] Inheritance.
-* [x] Operator overloading.
-* [x] Interfaces.
-* [x] Object allocation.
-* [x] Multithreading.
-* [x] Strings and arrays.
+	* [x] Domains and visibility.
+	* [x] Pointers.
+	* [x] Primitive data types.
+	* [x] Garbage collection.
+	* [x] Exception handling.
+	* [x] Inheritance.
+	* [x] Operator overloading.
+	* [x] Interfaces.
+	* [x] Object allocation.
+	* [x] Multithreading.
+	* [x] Strings and arrays.
 
 ### [Lecture 01 - Elementary java programming](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture01.pdf).
 
