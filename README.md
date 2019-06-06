@@ -85,35 +85,35 @@
 ### [Lecture 05 - Exception handling and Text IO](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture05.pdf).
 
 - [x] Exception handling.
-- [x] Exceptions.
-- [x] Exception types.
-- [x] Handling exceptions.
-- [x] When to use exceptions.
-- [x] Assertions.
+  - [x] Exceptions.
+  - [x] Exception types.
+  - [x] Handling exceptions.
+  - [x] When to use exceptions.
+  - [x] Assertions.
 - [x] Text I/O
-- [x] Persistence.
-- [x] The File class.
-- [x] Writing to text files.
-- [x] Reading from text files.
+  - [x] Persistence.
+  - [x] The File class.
+  - [x] Writing to text files.
+  - [x] Reading from text files.
 
 ### [Lecture 06 - Advanced Object orientation (part 1)](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture06.pdf).
 
 - [x] Inheritance.
-- [x] Inheritance
-- [x] Using inheritance.
-- [x] The super keyword.
-- [x] Overriding methods and casting.
-- [x] java.lang.Object.
-- [x] Inheritance example.
+  - [x] Inheritance
+  - [x] Using inheritance.
+  - [x] The super keyword.
+  - [x] Overriding methods and casting.
+  - [x] java.lang.Object.
+  - [x] Inheritance example.
 
 ### [Lecture 07 - Advanced Object Orientation (part 2)](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture07.pdf).
 
 - [x] Abstract classes and interfaces.
-- [x] Concept of abstract class.
-- [x] Abstract classes in java.
-- [x] Interfaces.
-- [x] Abstract classes vs interfaces.
-- [x] Abstract classes vs interfaces examples.
+  - [x] Concept of abstract class.
+  - [x] Abstract classes in java.
+  - [x] Interfaces.
+  - [x] Abstract classes vs interfaces.
+  - [x] Abstract classes vs interfaces examples.
 
 ### [Lecture 08 - JavaFX and Event Handling](https://github.com/Tombstone01/Computer-Science/blob/master/slides/ACSSE_CSC2A_2019_Lecture08.pdf)
 
