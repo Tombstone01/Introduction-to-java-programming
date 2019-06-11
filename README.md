@@ -1,152 +1,45 @@
-## This repository contains java applications, for both written for research and also those written as assignments as part of the course that I am doing here a the university.
+# :rainbow: Introduction to processing :rainbow:
+This repository is designed for those who are new to processing, including myself :)
 
-### [Lecture 00 - Java overview](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture00.pdf).
+I'll be keeping track of all the information I come across as I create more sketches in processing.
 
-- [x] Programming languages.
-- [x] Java technologies.
-- [x] Java and C++ compared.
-      _ [x] Domains and visibility.
-      _ [x] Pointers.
-      _ [x] Primitive data types.
-      _ [x] Garbage collection.
-      _ [x] Exception handling.
-      _ [x] Inheritance.
-      _ [x] Operator overloading.
-      _ [x] Interfaces.
-      _ [x] Object allocation.
-      _ [x] Multithreading. \* [x] Strings and arrays.
+## :star: Functions :star:
 
-### [Lecture 01 - Elementary java programming](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture01.pdf).
+### setup().
 
-- [x] The basics.
-      _ [x] Identifies, types and constants.
-      _ [x] Java data types.
-      _ [x] Operators and numerical type conversion.
-      _ [x] Character data.
-      _ [x] Output and input.
-      _ [x] Hello world.
-- [x] Programming constructs.
-      _ [x] Logical operators.
-      _ [x] Selection statements.
-      _ [x] Iterators.
-      _ [x] Flow control.
+This is one of the functions that processing provides and can be used to configure variables and other information that the application
+will need during its execution. It is worth mentioning that this application only runs once, hence it configures information that the application will need during its execution.
 
-### [Lecture 02 - Methods, arrays and algorithms](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture02.pdf).
+### draw()
 
-- [x] Methods
+This is another function that comes with processing and has to be implemented. This function should not be called explicitly, instead it is automatically called after draw function executes. It is possible to tell this function to not run continously by calling __noLoop__ from the inside of it.
 
-  - [x] Method signature.
-  - [x] Method invocation.
-  - [x] Method overloading.
-  - [x] The scope of a variable.
-  - [x] Program modularity.
+## :fire: Shapes :fire:
 
-- [x] Arrays.
-  - [x] Array declaration.
-  - [x] Variable length parameter list.
-  - [x] The java.utils.array class
+### rect(x, y, dx, dy) 
+### rect(x, y, dx, dy, r) 
+### rect(x, y, dx, dy, tl, tr, br, bl)
 
-* [x] Sorting algorithms.
-  - [x] Bubble sort.
-  - [x] Insertion sort.
-  - [x] Merge sort.
-  - [x] Selection sort.
-  - [x] Quick sort.
+This function takes 4, 5 or 8 arguments and draws a rectangle on the canvas.
 
-### [Lecture 03 - Basic object orientation](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture03.pdf).
+x - This is the x position of the rectangle. <br/>
+y - This is the y position of the rectangle. <br/>
+dx - This is the width of the rectangle. <br/> 
+dy - This is the height of the rectangle. <br/>
+r - This is the radius of all the edges of the rectangle. <br/>
+tl - Sets the radius of top left radius. <br/>
+tr - Sets the radius of top right radius. <br/>
+br - Sets the radius of the bottom right radius. <br/>
+bl - Sets the radius of the bottom left radius. <br/>
 
-- [x] Objects and classes.
-  - [x] OO metaphor.
-  - [x] Principles of OO design.
-  - [x] Java classes and objects.
-  - [x] Constructors and member access.
-  - [x] Reference types and garbage collection.
-  - [x] Modifiers.
-  - [x] Scope in a class.
-  - [x] Packages.
-  - [x] Immutable objects.
-  - [x] UML Class diagrams.
+### ellipse(x, y, dx, dy)
 
-### [Lecture 04 - Strings and regular expressions](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture04.pdf).
+This function takes 4 arguments and draws an ellipse on the canvas.
 
-- [x] Strings.
-  - [x] The String class.
-  - [x] String immutability.
-  - [x] Internet Strings.
-  - [x] String comparisons.
-  - [x] String methods.
-  - [x] Stringbuilder and Stringbuffer.
-  - [x] StringTokenizer.
-- [x] Regular expressions.
-  - [x] Character classes.
-  - [x] Quantifiers.
-  - [x] Java and regular expressions.
+x - This is the x position of the ellipse. <br/>
+y - This is the y position of the ellipse. <br/>
+dx - This is the width of the ellipse. <br/>
+dy - This is the height of the ellipse. <br/>
 
-### [Lecture 05 - Exception handling and Text IO](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture05.pdf).
+:heart: :heart: :heart:
 
-- [x] Exception handling.
-  - [x] Exceptions.
-  - [x] Exception types.
-  - [x] Handling exceptions.
-  - [x] When to use exceptions.
-  - [x] Assertions.
-- [x] Text I/O
-  - [x] Persistence.
-  - [x] The File class.
-  - [x] Writing to text files.
-  - [x] Reading from text files.
-
-### [Lecture 06 - Advanced Object orientation (part 1)](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture06.pdf).
-
-- [x] Inheritance.
-  - [x] Inheritance
-  - [x] Using inheritance.
-  - [x] The super keyword.
-  - [x] Overriding methods and casting.
-  - [x] java.lang.Object.
-  - [x] Inheritance example.
-
-### [Lecture 07 - Advanced Object Orientation (part 2)](https://github.com/Tombstone01/Java/blob/master/slides/ACSSE_CSC2A_2019_Lecture07.pdf).
-
-- [x] Abstract classes and interfaces.
-  - [x] Concept of abstract class.
-  - [x] Abstract classes in java.
-  - [x] Interfaces.
-  - [x] Abstract classes vs interfaces.
-  - [x] Abstract classes vs interfaces examples.
-
-### [Lecture 08 - JavaFX and Event Handling](https://github.com/Tombstone01/Computer-Science/blob/master/slides/ACSSE_CSC2A_2019_Lecture08.pdf)
-
-- [x] Basic JavaFX.
-- [x] Properties of JavaFX.
-- [x] GUI Event Handling.
-- [x] Events in code.
-- [x] Hello world - JavaFX style.
-
-### [Lecture 09 - Graphical user interfaces in Java](https://github.com/Tombstone01/Introduction-to-java-programming/blob/master/slides/ACSSE_CSC2A_2019_Lecture09.pdf)
-
-- [x] GUI Frameworks.
-- [x] Java GUI classes.
-- [x] Low level rendering.
-- [] More JavaFX code.
-
-### [Lecture 10 - Binary IO](https://github.com/Tombstone01/Introduction-to-java-programming/blob/master/slides/ACSSE_CSC2A_2019_Lecture10.pdf)
-
-- [x] Binary IO.
-- [x] Filtered IO.
-- [x] Object IO.
-- [x] Random Access Files.
-
-### [Lecture 11 - Generics](https://github.com/Tombstone01/Introduction-to-java-programming/blob/master/slides/ACSSE_CSC2A_2019_Lecture11.pdf)
-
-- [x] Generics.
-- [x] Type erasure and generics restriction.
-- [x] Unbounded types, raw types and wildcards.
-
-### [Lecture 12 - Design Patterns Part 1](https://github.com/Tombstone01/Introduction-to-java-programming/blob/master/slides/ACSSE_CSC2A_2019_Lecture12.pdf)
-
-- [x] Design patterns.
-- [x] Behavioural design patterns.
-- [x] Visitor.
-- [x] Observer.
-- [x] Command.
