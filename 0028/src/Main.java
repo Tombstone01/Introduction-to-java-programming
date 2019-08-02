@@ -12,25 +12,23 @@ import java.net.Socket;
 public class Main {
 
   private static int PORT_NUM = 8888;
+  private static ServerSocket server = null;
+  private static Socket clientSocket = null;
 
   public static void main(String[] args) {
-
-    ServerSocket server = null;
-    Socket clientSocket = null;
 
     try {
 
       // create a server on port 8080
       server = new ServerSocket(PORT_NUM);
 
+      System.out.println("Waiting for connections.");
+
       // accept incoming server connection.
       clientSocket = server.accept();
 
-      // create a thread.
-      Thread thread = new Thread(new Connection(clientSocket));
-
-      // start the thread.
-      thread.start();
+      // create a new thread for client connection.
+      new Thread(new Connection(clientSocket)).start();
 
     } catch (IOException e) {
       e.printStackTrace();

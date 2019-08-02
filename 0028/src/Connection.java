@@ -11,16 +11,14 @@ import java.util.Random;
 
 public class Connection implements Runnable {
 
-  private Socket socket;
   private PrintWriter printWriter;
   private BufferedReader bufferedReader;
 
   public Connection(Socket socket) {
-    this.socket = socket;
 
     try {
-      bufferedReader = new BufferedReader(new InputStreamReader(this.socket.getInputStream()));
-      printWriter = new PrintWriter(this.socket.getOutputStream(), true);
+      bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+      printWriter = new PrintWriter(socket.getOutputStream(), true);
     } catch (IOException e) {
       e.printStackTrace();
     }
@@ -29,10 +27,12 @@ public class Connection implements Runnable {
   public void run() {
 
     boolean done = false;
-    int counter = 0;
+    int counter = 1;
     String response = "";
 
-    printWriter.println("What question would you like to ask?");
+    printWriter.println("01 WELCOME - You may ask 5 questions");
+    printWriter.println("02 ASK your question or DONE");
+    printWriter.flush();
 
     while (!done) {
       try {
@@ -49,7 +49,7 @@ public class Connection implements Runnable {
 
         // if the question starts with why?
         if (question[1].equalsIgnoreCase("why")) {
-          printWriter.println("Because that is how it is.");
+          printWriter.println(counter + " Because that is how it is.");
         } else if (question[1].equalsIgnoreCase("Are")) {
           String[] clientResponse = { "Yes", "No", "Maybe" };
 
@@ -57,7 +57,7 @@ public class Connection implements Runnable {
           double index = Math.floor((Math.random() * 3));
 
           // pick a random response to the client.
-          printWriter.println(clientResponse[(int) index]);
+          printWriter.println(counter + " " + clientResponse[(int) index]);
         } else {
 
           String[] clientResponse = { "It depends", "Please ask again later", "Meh" };
@@ -66,11 +66,8 @@ public class Connection implements Runnable {
           double index = Math.floor((Math.random() * 3));
 
           // pick a random response to the client.
-          printWriter.println(clientResponse[(int) index]);
+          printWriter.println(counter + " " + clientResponse[(int) index]);
         }
-
-        // send response back to the user.
-        printWriter.println(counter + " response here.");
       }
 
       /**
@@ -82,7 +79,7 @@ public class Connection implements Runnable {
         done = true;
 
         // send the connection closed message.
-        printWriter.println("05 HAVE A NICE DAY - 5 Questions answered");
+        printWriter.println("05 HAVE A NICE DAY - " + counter + " Questions answered");
         printWriter.flush();
       }
 
