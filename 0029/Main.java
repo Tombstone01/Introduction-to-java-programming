@@ -9,15 +9,19 @@ public class Main {
   private static Socket clientSocket = null;
 
   public static void main(String[] args) throws IOException {
+
     serverSocket = new ServerSocket(1338);
 
-    System.out.println("Server running on " + serverSocket.getLocalPort());
+    while (true) {
 
-    clientSocket = serverSocket.accept();
-    try {
-      new Thread(new Server(clientSocket)).start();
-    } catch (Exception e) {
-      e.printStackTrace();
+      System.out.println("Server running on " + serverSocket.getLocalPort());
+
+      clientSocket = serverSocket.accept();
+      try {
+        new Thread(new Server(clientSocket)).start();
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
     }
   }
 }
