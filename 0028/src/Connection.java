@@ -86,5 +86,7 @@ public class Connection implements Runnable {
       // increment the number of questions asked.
       counter++;
     }
+
+    
   }
 }
