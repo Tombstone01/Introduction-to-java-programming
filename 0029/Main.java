@@ -12,7 +12,7 @@ public class Main {
 
     serverSocket = new ServerSocket(1338);
 
-    while (true) {
+    for (;;) {
 
       System.out.println("Server running on " + serverSocket.getLocalPort());
 
