@@ -55,13 +55,14 @@ public class Server implements Runnable {
       } else {
         // send header.
         out.writeBytes("HTTP/1.1 404 OK\r\n");
+        out.writeBytes("Content-Type: text/plain\r\n");
         out.writeBytes("Connection: close\r\n");
         out.writeBytes("\r\n");
 
-      }
-    } catch (
+        out.writeBytes("404 Not Found");
 
-    Exception e) {
+      }
+    } catch (IOException e) {
       e.printStackTrace();
 
       try {
@@ -72,7 +73,8 @@ public class Server implements Runnable {
       } catch (IOException y) {
         y.printStackTrace();
       }
-
+    } catch (NullPointerException e) {
+      e.printStackTrace();
     }
   }
 }
