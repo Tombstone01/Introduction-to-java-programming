@@ -17,13 +17,15 @@ public class Main {
   // hold users corresponding ports.
   private static LinkedList<Integer> users_ports = new LinkedList<>();
 
-  /** This method takes a socket, users, users_addresses and users_ports.
+  /**
+   * This method takes a socket, users, users_addresses and users_ports.
    * 
-   *  It then creates a packet and sends it to all the users currently online.
+   * It then creates a packet and sends it to all the users currently online.
    * 
    */
-  private static void handleRequests(DatagramSocket socket, LinkedList<String> users, LinkedList<InetAddress> addresses, LinkedList<Integer> ports, String message) throws Exception {
-    
+  private static void handleRequests(DatagramSocket socket, LinkedList<String> users, LinkedList<InetAddress> addresses,
+      LinkedList<Integer> ports, String message) throws Exception {
+
     String[] req = message.split(" ");
 
     String command = req[0];
@@ -31,13 +33,16 @@ public class Main {
     if (command.equalsIgnoreCase("HELO")) {
 
       String user = req[1];
-      String response = "HELO " + user;
+
+      String response = "HELO " + user + " " + users.indexOf(user);
+
+      System.out.println(response);
 
       byte[] newMessage = new String(response).getBytes();
 
       for (int x = 0; x < users.size(); x++) {
         DatagramPacket sendPacket = new DatagramPacket(newMessage, newMessage.length, addresses.get(x), ports.get(x));
-      
+
         socket.send(sendPacket);
       }
     }
@@ -47,15 +52,15 @@ public class Main {
 
     // Creste a server socket.
     DatagramSocket serverSocket = new DatagramSocket(UDP_POR);
-    
+
     System.out.println("Server running on port " + UDP_POR);
 
     // loop forever.
-    for(;;) {
-  
+    for (;;) {
+
       // create a bufferer to hold incoming messages.
       byte[] message = new byte[1024];
-  
+
       // Receive the packet.
       DatagramPacket receivePacket = new DatagramPacket(message, message.length);
       serverSocket.receive(receivePacket);
@@ -63,12 +68,12 @@ public class Main {
       System.out.println("Packet information: ");
 
       System.out.println("Address: " + receivePacket.getAddress());
-      
+
       // add address of user to addresses.
       users_addresses.add(receivePacket.getAddress());
 
       System.out.println("Port: " + receivePacket.getPort());
-      
+
       // add port no of user to user_ports
       users_ports.add(receivePacket.getPort());
 
@@ -80,14 +85,23 @@ public class Main {
 
       if (incoming[0].equalsIgnoreCase("HELO")) {
 
-        users.add(incoming[1]);
-        
+        String user = incoming[0];
+
+        users.add(user);
+
         handleRequests(serverSocket, users, users_addresses, users_ports, receiveStr);
+
+      } else if (incoming[0].equalsIgnoreCase("BROADCAST")) {
+        System.out.println("Server is message to all clients.");
+      } else if (incoming[0].equalsIgnoreCase("BUDDIES")) {
+        System.out.println("Server is displaying all users currently logged in.");
+      } else if (incoming[0].equalsIgnoreCase("YOBUDDY")) {
+        System.out.println("Client is talking to another client.");
+      } else if (incoming[0].equalsIgnoreCase("BYE")) {
+        System.out.println("Client is logging out.");
       }
-  
-      System.out.println("Received message: ");
-      System.out.println(receiveStr);
-      System.out.println('\n');
+
+      System.out.println("\n");
     }
   }
 }
