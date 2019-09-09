@@ -4,7 +4,7 @@
  - [x] Handle HELO command.
  - [x] Receive UDP packets to client.
  - [ ] Handle BROADCAST command.
- - [ ] Handle BUDDIES command. 
+ - [x] Handle BUDDIES command. 
  - [ ] Handle YOBUDDY command.
  - [x] Handle BYE command.
  - [ ] Handle OUCH command.
