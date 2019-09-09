@@ -32,6 +32,8 @@ public class Main {
 
     if (command.equalsIgnoreCase("HELO")) {
 
+      // add client to online users.
+
       String user = req[1];
 
       String response = "HELO " + user + " " + users.indexOf(user);
@@ -45,6 +47,19 @@ public class Main {
 
         socket.send(sendPacket);
       }
+    } else if (command.equalsIgnoreCase("BYE")) {
+      // remove client a list of active users.
+    } else if (command.equalsIgnoreCase("BUDDIES")) {
+      // send a client a list of active users.
+    } else if (command.equalsIgnoreCase("BROADCAST")) {
+      // send the message to all active users.
+    } else if (command.equalsIgnoreCase("YOBUDDY")) {
+      // send the message directly to user the user.
+        // get the user for list of active users.
+        // user the IP and PORT to send message directly.
+    } else {
+      // this is an invalid commmand.
+      // respond with an error message.
     }
   }
 
