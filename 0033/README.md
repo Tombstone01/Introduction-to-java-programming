@@ -7,11 +7,11 @@
  - [x] Handle BUDDIES command. 
  - [ ] Handle YOBUDDY command.
  - [x] Handle BYE command.
- - [ ] Handle OUCH command.
+ - [x] Handle OUCH command.
 
 ## Client.
  - [ ] UI (JavaFX).
  - [x] Connect to UPD server.
  - [x] Send packets to UDP server.
- - [x] Receive UDP packets to the server.
+ - [x] Receive UDP packets from a server.
  - [ ] Send UDP packet to another client directly.
