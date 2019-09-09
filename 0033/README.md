@@ -3,7 +3,7 @@
 ## Server.
  - [x] Handle HELO command.
  - [x] Receive UDP packets to client.
- - [ ] Handle BROADCAST command.
+ - [x] Handle BROADCAST command.
  - [x] Handle BUDDIES command. 
  - [ ] Handle YOBUDDY command.
  - [x] Handle BYE command.
