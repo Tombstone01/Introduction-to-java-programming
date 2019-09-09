@@ -6,7 +6,7 @@
  - [ ] Handle BROADCAST command.
  - [ ] Handle BUDDIES command. 
  - [ ] Handle YOBUDDY command.
- - [ ] Handle BYE command.
+ - [x] Handle BYE command.
  - [ ] Handle OUCH command.
 
 ## Client.
