@@ -1,7 +1,6 @@
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.util.Scanner;
-import java.net.Inet6Address;
 import java.net.InetAddress;
 
 public class Main {
@@ -38,19 +37,24 @@ public class Main {
 			// send the newly created packet.
 			clientSocket.send(sendPacket);
 
-			// create a buffer for a new incoming packet.
-			byte[] newMessage = new byte[1024];
+			if (strMessage.equalsIgnoreCase("BYE")) {
+				break;
+			} else if (strMessage.startsWith("HELO")) {
+				
+				// create a buffer for a new incoming packet.
+				byte[] newMessage = new byte[1024];
 
-			// Receive packet from the server.
-			DatagramPacket receivePacket = new DatagramPacket(newMessage, newMessage.length);
+				// Receive packet from the server.
+				DatagramPacket receivePacket = new DatagramPacket(newMessage, newMessage.length);
 
-			// receive the payload of the packet.
-			clientSocket.receive(receivePacket);
+				// receive the payload of the packet.
+				clientSocket.receive(receivePacket);
 
-			// turn the bytes into a string.
-			String newStr = new String(receivePacket.getData());
+				// turn the bytes into a string.
+				String newStr = new String(receivePacket.getData());
 
-			System.out.println("S: " + newStr);
+				System.out.println("S: " + newStr);
+			}
 		}
 	}
 }
