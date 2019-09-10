@@ -10,7 +10,7 @@
  - [x] Handle OUCH command.
 
 ## Client.
- - [ ] UI (JavaFX).
+ - [x] UI (JavaFX).
  - [x] Connect to UPD server.
  - [x] Send packets to UDP server.
  - [x] Receive UDP packets from a server.
