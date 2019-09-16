@@ -13,6 +13,12 @@ public class BUKAClient extends Application
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		//create the ClientPane, set up the Scene and Stage
-				
+		BUKAClientPane pane = new BUKAClientPane();
+		Scene scene = new Scene(pane, 500, 500);
+
+		primaryStage.setTitle("BUKA client.");
+		primaryStage.setScene(scene);
+
+		primaryStage.show();
 	}
 }
