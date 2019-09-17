@@ -14,106 +14,111 @@ import java.util.StringTokenizer;
 
 public class BUKAHandler implements Runnable {
 
-	private Socket clientSocket = null;
+  private Socket clientSocket = null;
 
-	private BufferedReader br = null;
-	private PrintWriter bw = null;
+  private BufferedReader br = null;
+  private PrintWriter bw = null;
 
-	private String usersFile = "data/users.txt";
+  private String usersFile = "data/users.txt";
   private String pdfFile = "data/PdfList.txt";
 
   private static LinkedList<String> activeUsers = null;
   private static LinkedList<Integer> user_ports = null;
 
-	public BUKAHandler(Socket newConnectionToClient) {
+  public BUKAHandler(Socket newConnectionToClient) {
 
+    // this stores the names of the client
     this.activeUsers = new LinkedList<>();
+
+    // this stores the ports of the client
     this.user_ports = new LinkedList<>();
 
     try {
       this.clientSocket = newConnectionToClient;
+
+      // bind streams to sockets.
       this.br = new BufferedReader(new InputStreamReader(this.clientSocket.getInputStream()));
       this.bw = new PrintWriter(this.clientSocket.getOutputStream(), true);
-	  } catch (Exception e) {
-        e.printStackTrace();
-	  }
-	}
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
 
-	public void run() {
+  public void run() {
 
     for (;;) {
       String req = null;
 
       // Process commands from client
       try {
-        req = br.readLine();	
+        req = br.readLine();
       } catch (Exception e) {
         System.out.println("There is a problem reading data from client.");
       }
-  
+
       StringTokenizer tokens = new StringTokenizer(req);
-  
+
       String command = tokens.nextToken();
-      
+
       System.out.println("Next command: " + command);
-  
+
       switch (command) {
       case "AUTH":
-  
+
         // get username and password
         String username = tokens.nextToken();
         String password = tokens.nextToken();
-  
+
         // check if user exists.
         boolean isFound = this.matchUser(username, password);
-  
+
         // if the user is found.
         if (isFound) {
-  
+
           this.activeUsers.add(username);
           this.user_ports.add(this.clientSocket.getPort());
-  
+
           // formulate response message and send message
           System.out.println("Login successful.");
-  
+
           String message = "Login sucess";
           this.sendResponse(message);
         }
-  
+
         break;
       case "LIST":
-  
+
         ArrayList<String> users = this.getFileList();
-  
+
         String message = "";
-  
+
         for (int x = 0; x < users.size(); x++) {
           message += users.get(x);
         }
-  
+
         sendResponse(message);
-  
+
         break;
       case "PDFRT":
-  
+
         String pdf_id = tokens.nextToken();
         String file = this.idToFile(pdf_id);
-  
+
         sendResponse(file);
-  
+
         break;
       case "LOGOUT":
-  
-         System.out.println("Client trying to logout.");
-  
+
+        System.out.println("Client trying to logout.");
+
         int port = this.clientSocket.getPort();
-  
+
         if (this.user_ports.indexOf(port) != -1) {
 
           System.out.println("Removing user ... ");
 
           int index = this.user_ports.indexOf(port);
-  
+
           this.user_ports.remove(user_ports.get(index));
 
           sendResponse("User loggout success.");
@@ -121,120 +126,120 @@ public class BUKAHandler implements Runnable {
         } else {
           sendError("You must be logged in to logout.");
         }
-        
+
         break;
       default:
         break;
       }
     }
-	}
+  }
 
-  /** This function takes username and password
-   *  Then returns a true of false depending 
-   *  on whether or not, a user exists in text file.
+  /**
+   * This function takes username and password Then returns a true of false
+   * depending on whether or not, a user exists in text file.
    * 
    * @param username
    * @param password
    * @return
    */
-	private boolean matchUser(String username, String password) {
+  private boolean matchUser(String username, String password) {
 
     // indicate whether a client exists or not
-		boolean found = false;
+    boolean found = false;
 
     // File contains user credentials
-		File userFile = new File(this.usersFile);
+    File userFile = new File(this.usersFile);
 
-		try {
+    try {
       // Open file
       Scanner scan = new Scanner(userFile);
-      
+
       // while there is a newline in file
-			while (scan.hasNextLine() && !found) {
+      while (scan.hasNextLine() && !found) {
 
         // reads line from file
         String line = scan.nextLine();
-        
+
         // split the line by space
-				String lineSec[] = line.split("\\s");
+        String lineSec[] = line.split("\\s");
 
         // get username from file
         String user = lineSec[0];
-        
+
         // get password from file
-				String pass = lineSec[1];
+        String pass = lineSec[1];
 
         // if user exists in database
-				if (user.equalsIgnoreCase(username) && pass.equalsIgnoreCase(password)) {
-				    found = true;
-				}
-			}
-			scan.close();
-		} catch (IOException ex) {
-			ex.printStackTrace();
-		}
+        if (user.equalsIgnoreCase(username) && pass.equalsIgnoreCase(password)) {
+          found = true;
+        }
+      }
+      scan.close();
+    } catch (IOException ex) {
+      ex.printStackTrace();
+    }
 
-		return found;
-	}
+    return found;
+  }
 
-	private ArrayList<String> getFileList() {
+  private ArrayList<String> getFileList() {
 
-		ArrayList<String> result = new ArrayList<String>();
-		File lstFile = new File(pdfFile);
+    ArrayList<String> result = new ArrayList<String>();
+    File lstFile = new File(pdfFile);
 
-		try {
-			Scanner scan = new Scanner(lstFile);
+    try {
+      Scanner scan = new Scanner(lstFile);
 
-			while (scan.hasNext()) {
-				result.add(scan.nextLine());
-			}
+      while (scan.hasNext()) {
+        result.add(scan.nextLine());
+      }
 
-			scan.close();
-		} catch (IOException ex) {
-			ex.printStackTrace();
-		}
+      scan.close();
+    } catch (IOException ex) {
+      ex.printStackTrace();
+    }
 
-		return result;
-	}
+    return result;
+  }
 
-	private String idToFile(String ID) {
-		String result = "";
-		File lstFile = new File(pdfFile);
-		try {
-			Scanner scan = new Scanner(lstFile);
+  private String idToFile(String ID) {
+    String result = "";
+    File lstFile = new File(pdfFile);
+    try {
+      Scanner scan = new Scanner(lstFile);
 
-			while (scan.hasNextLine()) {
+      while (scan.hasNextLine()) {
 
-				String file = scan.nextLine();
+        String file = scan.nextLine();
 
-				if (file.equalsIgnoreCase(ID)) {
+        if (file.equalsIgnoreCase(ID)) {
 
-					result = ID;
+          result = ID;
 
-					// break out of the while loop??
-					break;
-				}
-			}
+          // break out of the while loop??
+          break;
+        }
+      }
 
-			// Read filename from file
+      // Read filename from file
 
-			scan.close();
-		} catch (IOException ex) {
-			ex.printStackTrace();
-		}
-		return result;
-	}
+      scan.close();
+    } catch (IOException ex) {
+      ex.printStackTrace();
+    }
+    return result;
+  }
 
-	private void sendResponse(String message) {
-		String response = "200 " + message;
+  private void sendResponse(String message) {
+    String response = "200 " + message;
 
     bw.println(response);
     bw.flush();
   }
-  
+
   private void sendError(String message) {
     String response = "500 " + message;
-    
+
     bw.println(response);
   }
 }
