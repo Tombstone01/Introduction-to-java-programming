@@ -22,7 +22,7 @@ import java.net.Socket;
 			os = socket.getOutputStream();
 
 			pw = new PrintWriter(os);
-			br = new BufferedReader(new InputStream(is));
+			br = new BufferedReader());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
